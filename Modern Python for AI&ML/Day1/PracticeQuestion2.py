@@ -1,8 +1,8 @@
-# Digital Buisness Card
+# Digital Business Card
 
 name = input("Enter your name: ")
 profession = input("Enter your profession: ")
-age = input("Enter your age: ")
+age = int(input("Enter your age: "))
 email = input("Enter your email: ")
 
 print("---------------------------------")
