@@ -36,3 +36,29 @@ print(len(groceries)) #print the length of list
 
 for items in groceries: #looping in list to access every elements sequentially
     print(items)
+
+# List Slicing: list_name[start:end:step]
+print(groceries[0:2])
+print(groceries[:3])
+print(groceries[1:])
+print(groceries[::-1])
+
+# List Comprehension:
+num = [11,22,33,44,55,66]
+sqr = [x*x for x in num]
+print(sqr)
+
+sqrs = [x*x for x in range(11)]
+print(sqrs)
+
+# Nested List
+matrix = [[1,2], [3,4], [4,5]]
+print(matrix)
+print(matrix[1][0])
+
+# Sorting & Reversing
+num.sort()
+print(num)
+
+num.reverse()
+print(num)

@@ -8,8 +8,8 @@ import datetime #Module to work with dates and times in Python
 import time #Module to work with time-related functions in Python
 
 
-sender_email = "agrahariagrahari406@gmail.com" #Sender's email address
-sender_password = "zmyr eyhb cwpz somu" #Sender's email password
+sender_email = "Sender's email address"
+sender_password = "Sender's email password"
 
 reciever_email = input("Enter the reciever's email address: ") #Reciever's email address
 name = input("Enter the reciever's name: ") #Reciever's name
@@ -31,6 +31,8 @@ if (current_date.month, current_date.day) < (birthdate.month, birthdate.day):
 #Set the time to send the email (e.g., 00:01 AM)
 send_hour = 20
 send_minute = 45
+
+print(f"Birthday wish email will be sent to {name} on {birthdate.strftime('%Y-%m-%d')} at {send_hour:02d}:{send_minute:02d}.") #Print the scheduled email sending time
 # Loop to check Date and Time
 while True:
     current_time = datetime.datetime.now()
@@ -39,7 +41,7 @@ while True:
     time.sleep(60) #Check every minute
 
 msg = MIMEText(f"Happy Birthday {name}! Wishing you a wonderful day filled with joy and happiness.") #Email message content
-msg['Subject'] = "Happy Birthday!" #Email subject line
+msg['Subject'] = (f"Happy Birthday {name}!") #Email subject line
 msg['From'] = sender_email #Sender's email address
 msg['To'] = reciever_email #Reciever's email address
 
